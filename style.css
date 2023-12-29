@@ -80,7 +80,7 @@ body{
     background-color: var(--clr-neutral-100);
 
     display: grid;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 header{
@@ -97,6 +97,11 @@ header{
     align-items: flex-end;
 }
 
+.login{
+    display: flex;
+    gap: 2rem;
+}
+
 .log{
     background-color: var(--clr-neutral-100);
     color: var(--clr-neutral-500);
@@ -109,7 +114,7 @@ header{
     border-color: var(--clr-neutral-500);
     border-style: solid;
     border-radius: 0.5rem;
-    padding: 0;
+    padding: 0.1rem 1.1rem;
 }
 
 .nav-list{
@@ -183,6 +188,11 @@ header{
     padding-right: 1rem;
 }
 
+.intro > p{
+    color: var(--clr-neutral-500);
+    
+}
+
 .learn-more{
     background-color: var(--clr-neutral-900);
     color: var(--clr-neutral-100);
@@ -202,9 +212,11 @@ header{
 
 .hero-image{
     max-width: 350px;
+    z-index: -1;
 }
 
 .learn-more:is(:hover, :focus){
+    cursor: pointer;
     background-color: var(--clr-neutral-100);
     color: var(--clr-neutral-900);
     border-style: solid;
@@ -212,16 +224,27 @@ header{
     padding: 0.5rem 1.5rem;
 }
 
+.register:is(:hover, :focus){
+    cursor: pointer;
+    color: var(--clr-neutral-900);
+    border-color: var(--clr-neutral-900);
+}
+
+.log:is(:hover, :focus){
+    cursor: pointer;
+    color: var(--clr-neutral-900);
+}
+
+.log:is(:hover, :focus){
+    cursor: pointer;
+    color: var(--clr-neutral-900);
+}
+
 .dropdown :hover .content{
     display: block;
 }
 
 .dropdown :hover .dropdownbtn{
-    color: var(--clr-neutral-900);
-    cursor: pointer;
-}
-
-.btn :hover{
     color: var(--clr-neutral-900);
     cursor: pointer;
 }
