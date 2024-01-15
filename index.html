@@ -66,7 +66,9 @@
         
     </div>
     <div class="menu">
-      <button ><img src="images/icon-menu.svg" alt="" aria-hidden="true"></button>
+      <button class="openbtn" onclick="openNav()" >
+        <img src="images/icon-menu.svg" alt="" aria-hidden="true">
+      </button>
     </div>
     <div class="login">
       <a class="log">Login</a>
@@ -93,8 +95,70 @@
         <div><img src="images/client-maker.svg" alt=""></div>
       </div>
     </div>
+
      <img src="images/image-hero-desktop.png" alt="" class="hero-image">
      <img src="images/image-hero-mobile.png" alt="" class="mobile">
+  </div>
+
+  <!-- Sidepanel -->
+
+  <div id="mySidepanel" class="sidepanel">
+      
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <img src="images/icon-close-menu.svg" alt="">
+    </a>
+    <div class="content">
+      <button class="accordion">
+        Features
+        <img src="images/icon-arrow-down.svg" class="down-icon" alt="">
+        <img src="images/icon-arrow-up.svg" class="up-icon" alt="">
+      </button>
+      <div class="panel">
+        <div class="panel-content">
+          <a href="#">
+            <img src="images/icon-todo.svg" alt="" class="icon">
+            Todo List
+          </a>
+          <a href="#">
+            <img src="images/icon-calendar.svg" alt="" class="icon">
+            Calendar
+          </a>
+          <a href="#">
+            <img src="images/icon-reminders.svg" alt="" class="icon">
+            Reminders
+          </a>
+          <a href="#">
+            <img src="images/icon-planning.svg" alt="" class="icon">
+            Planning
+          </a>
+        </div>
+
+      </div>
+      <div>
+        <button class="accordion">
+          Company
+          <img src="images/icon-arrow-down.svg" class="down-icon" alt="">
+          <img src="images/icon-arrow-up.svg" class="up-icon" alt="">
+        </button>
+        <div class="panel">
+          <div class="panel-content">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </div>
+  
+      <a class="btn">Careers</a>
+      <a class="btn">About</a>
+  
+      <div class="sidepanel-login">
+        <a class="log">Login</a>
+        <button class="register">Register</button>
+      </div>
+    </div>
+  
+    
   </div>
   
   <div class="attribution">
@@ -102,4 +166,5 @@
     Coded by <a href="#">Itumeleng</a>.
   </div>
 </body>
+<script src="main.js"></script>
 </html>
