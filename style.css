@@ -3,8 +3,8 @@
     --clr-neutral-500: hsl(0, 0%, 41%);
     --clr-neutral-900: hsl(0, 0%, 8%);
 
-    --font-family:var(--clr-neutral-100);
-    --fs: 18px;
+    --font-family: "Epilogue", sans-serif;
+    --fs: 16px;
     --fw-regular: 500;
     --fw-bold: 700;
 }
@@ -81,6 +81,8 @@ body{
 
     display: grid;
     margin: 2rem;
+
+    font-family: var(--font-family);
 }
 
 header{
@@ -125,6 +127,8 @@ header{
     gap: 2rem;
     padding: 0;
 
+    font-size: var(--fs);
+
     max-width: fit-content;
 }
 
@@ -158,21 +162,21 @@ header{
     position: absolute;
     background-color: white;
     border-radius: 0.5rem;
-    min-width: 130px;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a{
     color: var(--clr-neutral-500);
-    margin: 10px;
-    padding: 4px;
     text-decoration: none;
-    display: block;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    margin: 10px;
+    padding: 4px;
 }
 
 .main-grid{
@@ -345,6 +349,7 @@ header{
     right: 0;
     background-color: var(--clr-neutral-100);
     overflow-x: hidden;
+    overflow-y: hidden;
     padding-top: 60px;
     transition: 500ms;
     margin-bottom: 2rem;
@@ -362,6 +367,10 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    margin-top: 1rem;
+
+    font-weight: var(--fw-regular);
+    font-size: var(--fs);
 }
 
 .sidepanel-login .register{
